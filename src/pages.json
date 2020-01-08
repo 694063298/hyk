@@ -1,0 +1,80 @@
+{
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "dev",
+			"path": "pages/admin/agent/public/tabPage/index",
+			"query": ""
+		}]
+	},
+	"pages": [{
+		"path": "pages/user/public/center/index",
+		"style": {
+			"navigationBarTitleText": "个人中心"
+		}
+	}, {
+		"path": "pages/user/public/deposit/index",
+		"style": {
+			"navigationBarTitleText": "我的押金"
+		}
+	},{
+		"path": "pages/user/public/join/index",
+		"style": {
+			"navigationBarTitleText": "加盟申请"
+		}
+	},{
+		"path": "pages/user/public/coupons/index",
+		"style": {
+			"navigationBarTitleText": "优惠券"
+		}
+	}],
+	"subPackages": [{
+		"root": "pages/user/charger",
+		"pages": [{
+			"path": "package/index",
+			"style": {
+				"navigationBarTitleText": "租借充电宝"
+			}
+		}]
+	},{
+		"root": "pages/article",
+		"pages": [{
+			"path": "guide/index",
+			"style": {
+				"navigationBarTitleText": "使用指南"
+			}
+		},{
+			"path": "about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		}]
+	},{
+		"root": "pages/admin/public",
+		"pages": [{
+			"path": "login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},{
+			"path": "dataQuery/index",
+			"style": {
+				"navigationBarTitleText": "数据查询"
+			}
+		}]
+	},{
+		"root": "pages/admin/agent",
+		"pages": [{
+			"path": "public/tabPage/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "惠亿康",
+		"navigationBarBackgroundColor": "#fe8101",
+		"backgroundColor": "#000000"
+	}
+}

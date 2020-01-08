@@ -1,0 +1,1 @@
+export const HOST = 'https://szjd.https.xiaozhuschool.com';

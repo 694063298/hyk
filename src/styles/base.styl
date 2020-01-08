@@ -1,0 +1,215 @@
+page{
+	font-size: 28upx;
+	background: #f0f0f0;
+	color: #333;
+}
+
+button {
+    font-size: 28upx;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+input, textarea {
+    font-size: 28upx;
+}
+
+checkbox, radio,switch {
+    transform: scale(0.8);
+}
+
+.input-placeholder {
+    color: #cfcfcf;
+}
+
+image, cover-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+button::after {
+    border-radius: 0;
+    border: none;
+}
+
+.fullPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.fullPage .container {
+    flex: 1;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pos_a {
+    position: absolute;
+}
+
+.pos_r {
+    position: relative;
+}
+
+.pos_f {
+    position: fixed;
+}
+
+.fixed_top {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+.fixed_bottom {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}
+
+.clearfix::before, .clearfix::after {
+    content: ' ';
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tas {
+    text-align: start;
+}
+
+.tae {
+    text-align: end;
+}
+
+.bd {
+    border: 1px solid #e5e5e5;
+}
+
+.bdb {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.bdt {
+    border-top: 1px solid #e5e5e5;
+}
+
+.bdl {
+    border-left: 1px solid #e5e5e5;
+}
+
+.bdr {
+    border-right: 1px solid #ccc;
+}
+
+.bdn {
+    border: none;
+}
+
+.dpn {
+    display: none;
+}
+
+.border-r1 {
+    border-radius: 10upx;
+    overflow: hidden;
+}
+
+.border-r2 {
+    border-radius: 20upx;
+    overflow: hidden;
+}
+
+.border-r3 {
+    border-radius: 30upx;
+    overflow: hidden;
+}
+
+.border-r4 {
+    border-radius: 40upx;
+    overflow: hidden;
+}
+
+.border-r6 {
+    border-radius: 60upx;
+    overflow: hidden;
+}
+.db {
+    display: block;
+}
+.bsb {
+    box-sizing: border-box;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.tdu {
+    text-decoration: underline;
+}
+
+.opc5 {
+    opacity: 0.5;
+}
+
+.opc8 {
+    opacity: 0.8;
+}
+
+
+.minBtn {
+    line-height: 60upx;
+    padding-left: 24upx;
+    padding-right: 24upx;
+    border-radius: 10upx;
+    min-width: 72upx;
+    box-sizing: border-box;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.shadow {
+    box-shadow: 0 0 8px 1px #e5e5e5;
+}
+
+.lists .lists_item + .lists_item {
+    margin-top: 20upx;
+}
