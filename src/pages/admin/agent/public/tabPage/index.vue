@@ -41,7 +41,7 @@
 						text: "我的"
 					}]
 				},
-				currentTabIndex: 0
+				currentTabIndex: 2
 			}
 		},
 		onLoad() {

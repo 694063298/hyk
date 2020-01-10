@@ -2,7 +2,7 @@
 	<div>
 		<div class='pt200 tac'>
 			<div class="ft36">充电宝设备查看</div>
-			<div class="btnType mt80 type1">业务投放设备</div>
+			<navigator url="/pages/admin/agent/public/devices/index" class="btnType mt80 type1">业务投放设备</navigator>
 			<div class="btnType mt70 type2">直营投放设备</div>
 		</div>
 	</div>

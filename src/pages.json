@@ -3,7 +3,7 @@
 		"current": 0,
 		"list": [{
 			"name": "dev",
-			"path": "pages/admin/agent/public/tabPage/index",
+			"path": "pages/admin/agent/public/deviceInfo/index",
 			"query": ""
 		}]
 	},
@@ -68,6 +68,41 @@
 			"path": "public/tabPage/index",
 			"style": {
 				"navigationBarTitleText": ""
+			}
+		},{
+			"path": "public/account/index",
+			"style": {
+				"navigationBarTitleText": "我的账户"
+			}
+		},{
+			"path": "public/faultList/index",
+			"style": {
+				"navigationBarTitleText": "报障审核"
+			}
+		},{
+			"path": "public/faultInfo/index",
+			"style": {
+				"navigationBarTitleText": "报障详情"
+			}
+		},{
+			"path": "public/revenue/index",
+			"style": {
+				"navigationBarTitleText": "营收统计"
+			}
+		},{
+			"path": "public/withdrawal/index",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},{
+			"path": "public/devices/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},{
+			"path": "public/deviceInfo/index",
+			"style": {
+				"navigationBarTitleText": "设备详情"
 			}
 		}]
 	}],

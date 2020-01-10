@@ -34,102 +34,17 @@
     width: 100%;
 }
 
-.h10 {
-    height: 10upx;
-}
-
-.h20 {
-    height: 20upx;
-}
-
-.h60 {
-    height: 60upx;
-}
-
-.h70 {
-    height: 70upx;
-}
-
-.h80 {
-    height: 80upx;
-}
-
-.h90 {
-    height: 90upx;
-}
-
-.h100 {
-    height: 100upx;
-}
-
-.h110 {
-    height: 110upx;
-}
-
-.h120 {
-    height: 120upx;
-}
-
-.h200 {
-    height: 200upx;
-}
-
-.h220 {
-    height: 220upx;
-}
-
-.h240 {
-    height: 240upx;
-}
-
-.h320 {
-    height: 320upx;
-}
-
-.h350 {
-    height: 350upx;
-}
-
-.lh40 {
-    line-height: 40upx;
-}
-
-.lh50 {
-    line-height: 50upx;
-}
-
-.lh60 {
-    line-height: 60upx;
-}
-
-.lh70 {
-    line-height: 70upx;
-}
-
-.lh80 {
-    line-height: 80upx;
-}
-
-.lh90 {
-    line-height: 90upx;
-}
-
-.lh100 {
-    line-height: 100upx;
-}
-
-.lh110 {
-    line-height: 110upx;
-}
-
-.lh120 {
-    line-height: 120upx;
-}
-
-.lh140 {
-    line-height: 140upx;
-}
+for $i in 1..20
+  .h{$i*10}
+    height: $i * 10upx
+		
+for $i in 4..20
+	.lh{$i*10}
+		line-height: $i * 10upx
 
 .ph100 {
     height: 100%;
+}
+.mh100{
+	min-height:100upx;
 }

@@ -1,30 +1,32 @@
-import {HOST} from '@/config'
+import {
+	HOST
+} from '@/config'
 const tools = {
 	methods: {
 		formatDate(now, ff) {
-		    let year = now.getFullYear();
-		    let month = now.getMonth() + 1 < 10 ? '0' + (now.getMonth() + 1) : now.getMonth() + 1;
-		    let date = now.getDate() < 10 ? '0' + now.getDate() : now.getDate();
-		    let hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours();
-		    let minute = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes();
-		    let second = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds();
-		    if(ff == 'Y-m'){
-		        return year + "-" + month;
-		    }else if (ff == 'Y-m-d') {
-		        return year + "-" + month + "-" + date;
-		    } else if (ff == 'Y.m.d') {
-		        return year + "." + month + "." + date;
-		    } else if (ff == 'Y-m-d H:i:s') {
-		        return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
-		    } else if (ff == 'Y-m-d H:i') {
-		        return year + "-" + month + "-" + date + " " + hour + ":" + minute;
-		    }
+			let year = now.getFullYear();
+			let month = now.getMonth() + 1 < 10 ? '0' + (now.getMonth() + 1) : now.getMonth() + 1;
+			let date = now.getDate() < 10 ? '0' + now.getDate() : now.getDate();
+			let hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours();
+			let minute = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes();
+			let second = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds();
+			if (ff == 'Y-m') {
+				return year + "-" + month;
+			} else if (ff == 'Y-m-d') {
+				return year + "-" + month + "-" + date;
+			} else if (ff == 'Y.m.d') {
+				return year + "." + month + "." + date;
+			} else if (ff == 'Y-m-d H:i:s') {
+				return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
+			} else if (ff == 'Y-m-d H:i') {
+				return year + "-" + month + "-" + date + " " + hour + ":" + minute;
+			}
 		},
 		format(time, ff) {
-		    time = time.toString();
-		    if (time.length == 10) time = time * 1000;
-		    let d = new Date(time * 1);
-		    return this.formatDate(d, ff);
+			time = time.toString();
+			if (time.length == 10) time = time * 1000;
+			let d = new Date(time * 1);
+			return this.formatDate(d, ff);
 		},
 		qs({
 			url = '',
@@ -97,6 +99,11 @@ const tools = {
 		},
 		locationHref() {
 			return getCurrentPages()[getCurrentPages().length - 1].route;
+		},
+		goTop() {
+			wx.pageScrollTo({
+				scrollTop: 0
+			})
 		},
 		uploadFile(name, cb, data, params, count) {
 			var that = this;
