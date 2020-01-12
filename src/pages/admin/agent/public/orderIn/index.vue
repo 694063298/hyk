@@ -2,7 +2,7 @@
 	<div>
 		<div class='pt200 tac'>
 			<div class="ft36">柜式陪护床订单查看</div>
-			<div class="btnType mt80 type1">业务订单查看</div>
+			<navigator url="/pages/admin/agent/public/order/index" class="btnType mt80 type1">业务订单查看</navigator>
 			<div class="btnType mt70 type2">直营医院订单查看</div>
 		</div>
 	</div>

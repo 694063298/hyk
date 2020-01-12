@@ -3,7 +3,7 @@
 		"current": 0,
 		"list": [{
 			"name": "dev",
-			"path": "pages/admin/agent/public/deviceInfo/index",
+			"path": "pages/admin/agent/public/orderList/index",
 			"query": ""
 		}]
 	},
@@ -103,6 +103,16 @@
 			"path": "public/deviceInfo/index",
 			"style": {
 				"navigationBarTitleText": "设备详情"
+			}
+		},{
+			"path": "public/order/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},{
+			"path": "public/orderList/index",
+			"style": {
+				"navigationBarTitleText": "医院订单"
 			}
 		}]
 	}],
